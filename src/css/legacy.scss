@@ -1,0 +1,153 @@
+.legacy__wrapper {
+	background: #fff;
+	padding: 30px 0 0;
+	.panel__1 {
+		margin-top: 50px;
+		padding: 30px 0 60px;
+		height: 35em;
+	}
+	.panel__2 {
+		padding: 30px 0px;
+    	background: white;
+		.global__heading {
+			width: 35%;
+    		margin: 0 auto;
+    		text-align: center;
+    		margin-bottom: 50px;
+    		.ornament {
+    			>img {
+    				width: 300px;
+    			}
+    		}
+		}
+		.content {
+			width: 80%;
+			margin: 0 auto;
+			// line-height: 30px;
+			.sub__heading {
+				font-size: 14px;
+			    width: 80%;
+			    margin: 0 auto;
+			    padding: 30px 0px 30px;
+			    text-align: center;
+			}
+			.info {
+				padding: 10px;
+				text-align: center;
+				&-img {
+					display: inline-block;
+					img {
+						width: 80px;
+						display: inline-block;
+					}
+				}
+				&-text {
+					vertical-align: top;
+					font-size: 12px;
+					padding: 10px;
+					// font-weight: bold;
+					display: inline-block;
+				}
+			}
+			.uls {
+				padding: 0 20px;
+				list-style: none;
+			  	// margin: 2em;
+			  	padding: 0;
+				  
+				  li {
+				    margin: 0;
+				    // margin-bottom: 1em;
+				    padding-left: 1.5em;
+				    position: relative;
+				    
+				    &:after {
+				      content: '';
+				      height: .5em;
+				      width: .5em;
+				      background: #ed3837;
+				      display: block;
+				      position: absolute;
+				      transform: rotate(45deg);
+				      top: .8em;
+				      left: 0;
+				    }
+				    
+				  }
+			}
+		}
+	}
+	.__media {
+		width: 80%;
+    	margin: 0 auto;
+    	&__left {
+    		text-align: center;
+		    background: red;
+		    color: white;
+		    padding: 50px 20px;
+    		>img {
+    			width: 200px;
+    			margin: 0 auto;
+    		}
+    		.name {
+				padding: 20px 0px 0px;
+			    font-size: 12px;
+			    font-weight: 600;
+    		}
+    		.founder {
+    			font-size: 11px;
+    		}
+    	}
+    	&__body {
+    		font-size: 14px;
+    		text-align: justify;
+    		padding: 50px 0px 50px 50px;
+    	}
+	}
+}
+@media only screen and (max-width:992px) {
+	.panel__1 {
+		margin-top: 50px;
+		padding: 30px 0 60px;
+		height: auto !important;
+		.__media {
+			width: 90% !important;
+		}
+	}
+	.panel__2 {
+		padding: 30px 0px;
+    	background: white;
+    	.content {
+			width: 85% !important;
+		}
+		.global__heading {
+			width: 90% !important;
+    		margin: 0 auto;
+    		text-align: center;
+    		margin-bottom: 50px;
+    		padding: 0vh 12vh 0 !important;
+		    text-align: center;
+		    font-size: 15px !important;
+    		.ornament {
+    			>img {
+    				width: 90% !important;
+    				margin: 0 auto;
+    			}
+    		}
+		}
+	}
+}
+.fade-enter {
+  opacity: 0.01;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 500ms ease-in;
+}
